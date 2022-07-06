@@ -1,0 +1,33 @@
+#header__container {
+  grid-area: header__container;
+  background-color: $color-primary;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  position: sticky;
+  z-index: 100;
+
+  header {
+    align-items: center;
+    background-color: $color-primary;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+
+    h1 {
+      color: $color-white;
+    }
+
+    nav ul li {
+      display: inline-block;
+      list-style-type: none;
+      margin: 0 10px;
+
+      a {
+        color: $color-white;
+        text-decoration: none;
+      }
+    }
+  }
+}
