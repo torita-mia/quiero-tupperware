@@ -270,6 +270,9 @@ button {
 /* ////////////////////////////   MEDIA QUERIES   //////////////////////////// */
 
 @media screen and (max-width: 927px) {
+<<<<<<< HEAD
+>>>>>>> 17ca338237b4bae971e14a01c9991209bfddec49
+=======
 >>>>>>> 17ca338237b4bae971e14a01c9991209bfddec49
   #container {
     grid-template-rows: auto auto 30px;
@@ -407,4 +410,7 @@ button {
     width: 100%;
   }
 }
+<<<<<<< HEAD
+>>>>>>> 17ca338237b4bae971e14a01c9991209bfddec49
+=======
 >>>>>>> 17ca338237b4bae971e14a01c9991209bfddec49
