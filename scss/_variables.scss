@@ -1,0 +1,16 @@
+$color: (
+  "primary": #7140d0,
+  "secondary": #532f9c,
+  "primary-light": #e1d2ff,
+  "primary-dark": #251744,
+  "white": #ffffff,
+  "black": #000000,
+  "text": #282828,
+);
+
+$bg-gradient: linear-gradient(
+  45deg,
+  rgba(225, 210, 255, 1) 0%,
+  rgba(252, 245, 255, 1) 50%,
+  rgba(232, 220, 255, 1) 100%
+);

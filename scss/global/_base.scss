@@ -1,16 +1,4 @@
-$color-primary: #7140d0;
-$color-secondary: #532f9c;
-$color-primary-light: #e1d2ff;
-$color-primary-dark: #251744;
-$color-white: #ffffff;
-$color-black: #000000;
-$color-text: #282828;
-$bg-gradient: linear-gradient(
-  45deg,
-  rgba(225, 210, 255, 1) 0%,
-  rgba(252, 245, 255, 1) 50%,
-  rgba(232, 220, 255, 1) 100%
-);
+@import "../variables";
 
 * {
   margin: 0;
@@ -19,7 +7,7 @@ $bg-gradient: linear-gradient(
 
 html,
 body {
-  color: $color-text;
+  color: map-get($map: $color, $key: "text");
   font-family: "Lato", sans-serif;
   font-size: 18px;
   line-height: 150%;
