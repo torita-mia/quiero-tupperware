@@ -1,0 +1,117 @@
+#mediosDePago {
+  display: flex;
+}
+
+#mediosDePago li {
+  list-style-type: none;
+  margin: 10px 40px 0 0;
+}
+
+#prod__stock__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* /// CLASES /// */
+
+/* --- Producto --- */
+
+.cardProducto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(28, 28, 28, 0.5);
+  border-radius: 4px;
+  padding: 15px;
+  width: 220px;
+  margin-right: 20px;
+
+  svg {
+    align-self: flex-start;
+    margin-bottom: 5px;
+    stroke: rgba(28, 28, 28, 0.5);
+  }
+
+  img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .precioIconProducto {
+    display: flex;
+    margin: 5px 0 15px 0;
+
+    span {
+      font-size: 22px;
+      font-weight: 600;
+      &:nth-child(1) {
+        color: rgba(28, 28, 28, 0.5);
+        font-size: 16px;
+        font-weight: 400;
+        padding: 5px 10px 5px 5px;
+      }
+    }
+  }
+
+  a {
+    align-self: stretch;
+    text-align: center;
+  }
+}
+
+/* /// MEDIA QUERIES /// */
+@media screen and (max-width: 375px) {
+  #container {
+    grid-row-gap: 0px;
+    grid-template-rows: auto auto 30px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    h1 {
+      margin: 10px 0;
+    }
+
+    nav {
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5px 0 10px 0;
+
+        li {
+          margin: 0 10px;
+
+          a {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  #main__container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #prod__stock {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    h2 {
+      text-align: center;
+    }
+  }
+
+  .cardProducto {
+    margin-right: 0px;
+  }
+}
