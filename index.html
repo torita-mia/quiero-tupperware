@@ -4,119 +4,103 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Encontrá todos los productos Tupperware en un sitio sólo."
-    />
-    <meta
-      name="keywords"
-      content="Eco Twist, Eco Kids, Mini Chef, Mega Bowl, Practifreezee, Practi Refri, Snack Bowl, Bowl Maravilloso, Hermético Poeme"
-    />
+    <meta name="description" content="Encontrá todos los productos Tupperware en un sitio sólo."/>
+    <meta name="keywords" content="Eco Twist, Eco Kids, Mini Chef, Mega Bowl, Practifreezee, Practi Refri, Snack Bowl, Bowl Maravilloso, Hermético Poeme"/>
     <!-- <<<<< Google Fonts >>>>> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;600;700;900&family=Vibur&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;600;700;900&family=Vibur&display=swap" rel="stylesheet"/>
     <!-- <<<<< >>>>> -->
 
     <title>Quiero Tupperware - Home</title>
     <link rel="stylesheet" href="./css/estilos.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   </head>
   <body>
     <div id="container">
-      <div id="header__container">
-        <header>
-          <h1>Quiero Tupperware</h1>
-          <nav>
-            <ul>
-              <li><a href="./index.html">Inicio</a></li>
-              <li><a href="./pages/productos.html">Productos</a></li>
-              <li><a href="./pages/comprar.html">Comprar</a></li>
-              <li><a href="./pages/vender.html">Quiero vender</a></li>
-              <li><a href="./pages/contacto.html">Contactame</a></li>
-            </ul>
-          </nav>
-        </header>
-      </div>
-      <main id="main__container">
-        <section class="padding-30 animate__animated animate__fadeIn" id="hero">
-          <img src="./assets/img/hero.jpg" alt="Muchos productos Tupperware" />
-          <div id="hero__content">
-            <h2 class="hero-title">
+      <header id="header__container">
+        <div class="header__logo">
+          <h1 class="title__l"><a href="./index.html">Quiero Tupperware</a></h1>
+        </div>
+        <nav>
+          <ul id="menu__container">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./pages/productos.html">Productos</a></li>
+            <li><a href="./pages/comprar.html">Comprar</a></li>
+            <li><a href="./pages/vender.html">Quiero vender</a></li>
+            <li><a href="./pages/contacto.html">Contactame</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="pb-20">
+        <section class="animate__animated animate__fadeIn" id="hero__container">
+          <div id="hero__img">
+            <picture>
+              <img src="./assets/img/hero.jpg" alt="Muchos productos Tupperware"/>
+            </picture>
+          </div>
+          <div id="hero__texto" class="p-20">
+            <h2 class="t-40 pb-20">
               Aprovechá el 10% de descuento comprando en la tienda virtual
             </h2>
-            <a class="btn-primary margin-20" href="./pages/comprar.html"
-              >Comprar ahora</a
-            >
+            <a class="btn-primary" href="./pages/comprar.html">Comprar ahora</a>
           </div>
         </section>
 
-        <section
-          class="padding-30 animate__animated animate__fadeInUp"
-          id="compra"
-        >
-          <div id="compra__content">
-            <h2>Comprá productos Tupperware</h2>
-            <p class="margin-10">
+        <section class="mt-mb-200 animate__animated animate__fadeIn" id="compra__container">
+          <div id="compra__textos">
+            <h2 class="t-30 pb-10">Comprá productos Tupperware</h2>
+            <p class="t-18 pb-20">
               Podés comprar productos Tupperware con un 10% de descuento a
               través de la tienda virtual, comprar productos en stock con
               entrega inmediata o tradicionalmente por el catálogo vigente.
             </p>
-            <a class="btn-secondary margin-20" href="./pages/comprar.html"
-              >Quiero comprar</a
-            >
+            <a class="btn-primary" href="./pages/comprar.html">Quiero comprar</a>
           </div>
-          <div id="compra__images">
-            <img
-              src="./assets/img/producto-1.png"
-              alt="Reservorio Tupperware 1"
-            /><img
-              src="./assets/img/producto-2.png"
-              alt="Botella Tupperware 1"
-            /><img src="./assets/img/producto-3.png" alt="Jarra Tupperware" />
+          <div id="compra__img">
+            <picture>
+              <img src="./assets/img/producto-1.png" alt="Reservorio Tupperware 1" />
+            </picture>
+            <picture>
+              <img src="./assets/img/producto-2.png" alt="Botella Tupperware 1" />
+            </picture>
+            <picture>
+              <img src="./assets/img/producto-3.png" alt="Jarra Tupperware" />
+            </picture>
           </div>
         </section>
 
-        <section
-          class="padding-30 animate__animated animate__fadeInUp"
-          id="productos"
-        >
-          <div id="productos__content">
-            <h2>Conocé los productos</h2>
-            <p class="margin-10">
-              Los productos Tupperware son libres de BPA ayudan a cuidar tu
-              economía, ganar tiempo, llevar una dieta más sana, así como
-              también contribuyen a cuidar el medioambiente.
+        <section class="pb-20 animate__animated animate__fadeIn" id="prodVende__container">
+          <article class="card p-20" id="productos__container">
+            <div id="productos__textos">
+              <h3 class="t-20 pb-10">Conocé los productos</h3>
+              <p class="t-18 pb-20">
+                Los productos Tupperware son libres de BPA ayudan a cuidar tu
+                economía, ganar tiempo, llevar una dieta más sana, así como
+                también contribuyen a cuidar el medioambiente.
+              </p>
+              <a class="link" href="./pages/productos.html">Saber más</a>
+            </div>
+            <div id="productos__img">
+              <picture>
+                <img src="./assets/img/BPA.jpg" alt="Logo BPA" />
+              </picture>
+            </div>
+          </article>
+
+          <article class="card p-20" id="vende__container">
+            <h3 class="t-20 pb-10">Vendé Tupperware</h2>
+            <p class="t-18 pb-20">
+              Emprendé hoy un negocio independiente donde podrás manejar
+              libremente tus tiempos y ser tu propio jefe.
             </p>
-            <a class="link margin-10" href="./pages/productos.html"
-              >Saber más</a
-            >
-          </div>
-          <img src="./assets/img/BPA.jpg" alt="Logo BPA" />
-        </section>
-
-        <section
-          class="padding-30 animate__animated animate__fadeInUp"
-          id="vender"
-        >
-          <h2>Vendé Tupperware</h2>
-          <p class="margin-10">
-            Emprendé hoy un negocio independiente donde podrás manejar
-            libremente tus tiempos y ser tu propio jefe.
-          </p>
-          <a class="btn-secondary margin-20" href="./pages/contacto.html"
-            >Quiero vender</a
-          >
+            <a class="link" href="./pages/contacto.html">Quiero vender</a>
+          </article>
         </section>
       </main>
-      <footer class="animate__animated animate__fadeInUp">
-        Copyright &copy; 2022 Quiero Tupperware Todos los derechos reservados
+      <footer id="footer__container">
+        <span>Copyright &copy; 2022 Quiero Tupperware Todos los derechos reservados</span>
       </footer>
     </div>
   </body>

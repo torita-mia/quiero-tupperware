@@ -1,0 +1,40 @@
+#emprende {
+  width: 90%;
+
+  p {
+    width: 90%;
+  }
+}
+
+#cards__container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+@media screen and (max-width: 960px) {
+  #main__container {
+    #emprende {
+      h2 {
+        font-size: map-get($map: $fSize, $key: "30");
+      }
+      p {
+        width: 100%;
+      }
+    }
+
+    #cards__container {
+      #programa {
+        h3 {
+          font-size: map-get($map: $fSize, $key: "20");
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 533px) {
+  #container {
+    width: 100%;
+  }
+}

@@ -4,8 +4,8 @@
   border: 2px solid rgba(map-get($map: $color, $key: "white"), 0);
   color: none;
   display: inline-block;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: map-get($map: $fSize, $key: "18");
+  font-weight: 400;
   text-decoration: none;
   padding: 10px 12px;
 }
@@ -24,11 +24,11 @@
 
 .btn-secondary {
   @extend .btn;
-  border: 2px solid map-get($map: $color, $key: "primary");
+  border: 1px solid map-get($map: $color, $key: "primary");
   color: map-get($map: $color, $key: "primary");
 
   &:hover {
-    border: 2px solid map-get($map: $color, $key: "secondary");
+    border: 1px solid map-get($map: $color, $key: "secondary");
     color: map-get($map: $color, $key: "secondary");
   }
 }
@@ -38,7 +38,7 @@
 .link {
   display: inline-block;
   color: map-get($map: $color, $key: "text");
-  font-size: 18px;
+  font-size: map-get($map: $fSize, $key: "18");
   font-weight: 600;
 
   &:hover {

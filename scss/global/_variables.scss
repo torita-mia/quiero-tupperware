@@ -1,0 +1,31 @@
+$color: (
+  "primary": #7140d0,
+  "secondary": #532f9c,
+  "primary-light": #e1d2ff,
+  "primary-dark": #251744,
+  "white": #ffffff,
+  "white-06": rgba(255, 255, 255, 0.6),
+  "black": #000000,
+  "black-02": rgba(0, 0, 0, 0.2),
+  "text": #282828,
+  "gradient":
+    linear-gradient(
+      45deg,
+      rgba(225, 210, 255, 1) 0%,
+      rgba(252, 245, 255, 1) 50%,
+      rgba(232, 220, 255, 1) 100%
+    ),
+);
+
+$fSize: (
+  "40": 4rem,
+  "34": 3.4rem,
+  "30": 3rem,
+  "28": 2.8rem,
+  "20": 2rem,
+  "18": 1.8rem,
+  "16": 1.6rem,
+  "14": 1.4rem,
+  "12": 1.2rem,
+  "10": 1rem,
+);

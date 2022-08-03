@@ -1,4 +1,4 @@
-@import "../variables";
+@import "./variables";
 
 * {
   margin: 0;
@@ -9,46 +9,41 @@ html,
 body {
   color: map-get($map: $color, $key: "text");
   font-family: "Lato", sans-serif;
-  font-size: 18px;
-  line-height: 150%;
+  font-size: 10px;
+  height: 100vh;
+  width: 100vw;
 }
 
 #container {
+  min-height: 100%;
   display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px auto 60px;
   grid-template-areas:
-    "header__container"
-    "main__container"
+    "header"
+    "main"
     "footer";
-  grid-template-rows: 60px auto 30px;
+  header {
+    grid-area: header;
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  footer {
+    grid-area: footer;
+  }
 }
 
-/* ////////////////////////////   CLASS   //////////////////////////// */
-
-.hero-title {
-  font-size: 36px;
-  line-height: 130%;
+@media screen and (max-width: 1024px) {
+  #container {
+    grid-template-rows: 120px auto 60px;
+  }
 }
 
-.hero-text {
-  font-size: 26px;
-  line-height: 130%;
-}
-
-/* /// MARGIN /// */
-.margin-10 {
-  margin-top: 10px;
-}
-
-.margin-20 {
-  margin-top: 20px;
-}
-
-/* /// TEXT ALIGN /// */
-.center {
-  text-align: center;
-}
-
-/* /// PADDING /// */
-.padding-30 {
-  padding: 30px;
+@media screen and (max-width: 533px) {
+  #container {
+    grid-template-rows: auto auto 60px;
+  }
 }

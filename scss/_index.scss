@@ -1,0 +1,252 @@
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 20px;
+
+  #hero__container {
+    display: flex;
+    align-items: center;
+
+    #hero__img {
+      width: 50%;
+      display: flex;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    #hero__texto {
+      width: 50%;
+    }
+  }
+
+  #compra__container {
+    display: flex;
+    width: 80%;
+
+    #compra__textos {
+      width: 50%;
+      height: auto;
+      padding-right: 20px;
+    }
+
+    #compra__img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+
+      picture {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  #prodVende__container {
+    display: flex;
+    gap: 30px;
+    width: 80%;
+
+    #productos__container {
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+
+      #productos__textos {
+        width: 80%;
+      }
+
+      #productos__img {
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        width: 20%;
+
+        picture {
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+
+    #vende__container {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  main {
+    #prodVende__container {
+      flex-direction: column;
+
+      #productos__container {
+        width: 100%;
+
+        #productos__img {
+          justify-content: center;
+          padding-left: 0;
+
+          picture {
+            width: 60%;
+          }
+        }
+      }
+
+      #vende__container {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #hero__container {
+    padding: 50px 0;
+  }
+  #compra__container {
+    margin: 0;
+    padding: 50px 0;
+  }
+  #prodVende__container {
+    padding: 50px 0;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  main {
+    #hero__container {
+      flex-direction: column;
+      #hero__img {
+        width: 60%;
+
+        picture {
+          width: 100%;
+        }
+      }
+
+      #hero__texto {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+
+        h2 {
+          font-size: map-get($map: $fSize, $key: "30");
+          text-align: center;
+        }
+        a {
+          align-self: center;
+        }
+      }
+    }
+
+    #compra__container {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 50px 0;
+
+      #compra__textos {
+        width: 100%;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        order: 2;
+
+        h2 {
+          font-size: map-get($map: $fSize, $key: "28");
+          text-align: center;
+        }
+
+        p {
+          text-align: center;
+        }
+
+        a {
+          align-self: center;
+          margin-bottom: 20px;
+        }
+      }
+
+      #compra__img {
+        padding-bottom: 20px;
+      }
+    }
+
+    #prodVende__container {
+      padding: 50px 0;
+      justify-content: center;
+
+      #productos__container {
+        width: auto;
+      }
+
+      #vende__container {
+        width: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 533px) {
+  main {
+    #hero__container {
+      #hero__img {
+        width: 100%;
+      }
+      #hero__texto {
+        width: 100%;
+      }
+    }
+
+    #compra__container {
+      width: 100%;
+      #compra__img {
+        width: 100%;
+      }
+    }
+
+    #prodVende__container {
+      width: 100%;
+
+      #productos__container {
+        flex-direction: column;
+
+        #productos__textos {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          order: 2;
+        }
+
+        #productos__img {
+          width: 100%;
+          order: 1;
+          picture {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 10px;
+            img {
+              width: 60%;
+            }
+          }
+        }
+      }
+
+      #vende__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}

@@ -29,60 +29,62 @@
   </head>
   <body>
     <div id="container">
-      <div id="header__container">
-        <header>
-          <h1>Quiero Tupperware</h1>
-          <nav>
-            <ul>
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a href="./productos.html">Productos</a></li>
-              <li><a href="./comprar.html">Comprar</a></li>
-              <li><a href="./vender.html">Quiero vender</a></li>
-              <li><a href="./contacto.html">Contactame</a></li>
-            </ul>
-          </nav>
-        </header>
-      </div>
+      <header id="header__container">
+        <div class="header__logo">
+          <h1 class="title__l">
+            <a href="../index.html">Quiero Tupperware</a>
+          </h1>
+        </div>
+        <nav>
+          <ul id="menu__container">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./productos.html">Productos</a></li>
+            <li><a href="./comprar.html">Comprar</a></li>
+            <li><a href="./vender.html">Quiero vender</a></li>
+            <li><a href="./contacto.html">Contactame</a></li>
+          </ul>
+        </nav>
+      </header>
       <main id="main__container">
-        <section class="padding-30" id="formulario__section">
-          <article id="formulario__title">
-            <h2 class="center hero-title">
-              Completa el formulario para comprar o vender productos Tupperware.
-            </h2>
-          </article>
-          <article class="padding-30" id="formulario__contenedor">
-            <form
-              id="form"
-              class="centrado animate__animated animate__fadeIn"
-              action=""
-            >
-              <label for="">Nombre</label>
-              <input placeholder="Ingresa tu nombre" type="text" />
-              <label for="">Número de celular</label>
-              <input
-                placeholder="Ingresa tu número de celular"
-                type="email"
-                name=""
-                id=""
-              />
-              <label>Consulta</label>
-              <textarea
-                placeholder="Dejame tu consulta"
-                name=""
-                id=""
-                cols="30"
-                rows="10"
-              ></textarea>
-              <div id="botones__form">
-                <button class="link" type="reset">Limpiar</button>
-                <button class="btn" type="submit">Enviar</button>
-              </div>
-            </form>
-          </article>
+        <section class="mt-mb-50" id="formulario">
+          <h2 class="t-40 mb-50">
+            Completa el formulario para comprar o vender productos Tupperware.
+          </h2>
+          <form id="form" class="animate__animated animate__fadeIn" action="">
+            <label class="t-18 pb-10" for="">Nombre</label>
+            <input
+              class="mb-20"
+              placeholder="Ingresa tu nombre"
+              type="text"
+              required
+            />
+            <label class="t-18 pb-10" for="">Número de celular</label>
+            <input
+              class="mb-20"
+              placeholder="Ingresa tu número de celular"
+              type="email"
+              required
+            />
+            <label class="t-18 pb-10">Consulta</label>
+            <textarea
+              class="mb-20"
+              placeholder="Dejame tu consulta"
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+            <div id="botones__form">
+              <button class="link" type="reset">Limpiar</button>
+              <button class="btn-primary" type="submit">Enviar</button>
+            </div>
+          </form>
         </section>
       </main>
-      <footer>
-        Copyright &copy; 2022 Quiero Tupperware Todos los derechos reservados
+      <footer id="footer__container">
+        <span
+          >Copyright &copy; 2022 Quiero Tupperware Todos los derechos
+          reservados</span
+        >
       </footer>
     </div>
   </body>

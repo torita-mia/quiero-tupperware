@@ -26,70 +26,96 @@
   </head>
   <body>
     <div id="container">
-      <div id="header__container">
-        <header>
-          <h1>Quiero Tupperware</h1>
-          <nav>
-            <ul>
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a href="./productos.html">Productos</a></li>
-              <li><a href="./comprar.html">Comprar</a></li>
-              <li><a href="./vender.html">Quiero vender</a></li>
-              <li><a href="./contacto.html">Contactame</a></li>
-            </ul>
-          </nav>
-        </header>
-      </div>
+      <header id="header__container">
+        <div class="header__logo">
+          <h1 class="title__l">
+            <a href="../index.html">Quiero Tupperware</a>
+          </h1>
+        </div>
+        <nav>
+          <ul id="menu__container">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./productos.html">Productos</a></li>
+            <li><a href="./comprar.html">Comprar</a></li>
+            <li><a href="./vender.html">Quiero vender</a></li>
+            <li><a href="./contacto.html">Contactame</a></li>
+          </ul>
+        </nav>
+      </header>
       <main id="main__container">
-        <section class="padding-30" id="comprar">
-          <article id="comprar__bajada">
-            <h2 class="hero-title">
-              Convertite en emprendedora o emprendedor con Tupperware
-            </h2>
-            <p class="margin-10 hero-text">
-              Con Tupperware podés organizar tu negocio de forma independiente
-              desde cualquier parte del territorio argentino y aumentar tus
-              ingresos sin ningún tipo de inversión. Potenciate, capacitate,
-              crecé y ganá!
-            </p>
-          </article>
+        <section class="mt-mb-50" id="emprende">
+          <h2 class="t-40 pb-10">
+            Convertite en emprendedora o emprendedor con Tupperware
+          </h2>
+          <p class="t-20 pb-20">
+            Con Tupperware podés organizar tu negocio de forma independiente
+            desde cualquier parte del territorio argentino y aumentar tus
+            ingresos sin ningún tipo de inversión. Potenciate, capacitate, crecé
+            y ganá!
+          </p>
         </section>
 
-        <section class="padding-30" id="comprar">
-          <article class="animate__animated animate__fadeInUp">
-            <h2 class="margin-20">Programa onboarding</h2>
-            <p class="margin-10">
+        <section id="cards__container">
+          <div
+            class="cardVender card animate__animated animate__fadeInUp"
+            id="programa"
+          >
+            <picture>
+              <img
+                src="../assets/img/vender/onboarding.png"
+                alt="foto kit de bienvenida"
+              />
+            </picture>
+            <h3 class="t-30 pb-10">Programa onboarding</h3>
+            <p class="t-18 pb-20">
               El programa onboarding es un programa de premios que te acompaña
               en las primeras 6 campañas.
             </p>
-          </article>
-        </section>
+          </div>
 
-        <section class="padding-30" id="comprar">
-          <article class="animate__animated animate__fadeInUp">
-            <h2 class="margin-20">Premios</h2>
-            <p class="margin-10">
+          <div
+            class="cardVender card animate__animated animate__fadeInUp"
+            id="premios"
+          >
+            <picture>
+              <img
+                src="../assets/img/vender/premiosjpg.jpg"
+                alt="foto de premios"
+              />
+            </picture>
+            <h3 class="t-30 pb-10">Premios</h3>
+            <p class="t-18 pb-20">
               En Tupperware la pasión, el compromiso, y el crecimiento tienen
               premios y reconocimientos. Cada campaña construis el camino al
               éxito, cada campaña te da la oportunidad de lograr todo lo que
               soñaste.
             </p>
-          </article>
-        </section>
+          </div>
 
-        <section class="padding-30" id="comprar">
-          <article class="animate__animated animate__fadeInUp">
-            <h2 class="margin-20">Requisitos</h2>
-            <p class="margin-10">
+          <div
+            class="cardVender card animate__animated animate__fadeInUp"
+            id="requisitos"
+          >
+            <picture>
+              <img
+                src="../assets/img/vender/requisitosjpg.jpg"
+                alt="foto detres chicas felices"
+              />
+            </picture>
+            <h3 class="t-30 pb-10">Requisitos</h3>
+            <p class="t-18 pb-20">
               Los requisito que necesitas para comenzar tu negocio independiente
               son: ser mayor de 18 años y no figurar en el Veráz. Si cumplís con
               estos requisitos contactame y ¡empezá ahora!
             </p>
-          </article>
+          </div>
         </section>
       </main>
-      <footer>
-        Copyright &copy; 2022 Quiero Tupperware Todos los derechos reservados
+      <footer id="footer__container">
+        <span
+          >Copyright &copy; 2022 Quiero Tupperware Todos los derechos
+          reservados</span
+        >
       </footer>
     </div>
   </body>
